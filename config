@@ -349,10 +349,10 @@ bar {
         separator  #000000
 
 #                      	   border    backgr    text
-        focused_workspace  #ffffff   #00aaff50 #ffffff
-        active_workspace   #000000   #00aaff50 #000000
-        inactive_workspace #aaaaaa90 #00aaff50 #ffffff
-        binding_mode       #ffffff90 #eeeeee50 #00aaff
+        focused_workspace  #ffffff   #22222250 #ffffff
+        active_workspace   #00000090 #22222250 #000000
+        inactive_workspace #aaaaaa90 #22222250 #ffffff
+        binding_mode       #00000050 #00000050 #2aa198
         urgent_workspace   #f0ff0f90 #dd000070 #ffffff
     }
 }
@@ -375,7 +375,7 @@ bar {
 #############################
 
 # Set inner/outer gaps
-gaps inner 15
+gaps inner 8
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
@@ -384,7 +384,7 @@ gaps outer 0
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-#smart_gaps on
+smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
@@ -439,7 +439,7 @@ exec --no-startup-id sleep 2; qv2ray
 
 # Bindkey
 #bindsym $mod+c exec --no-startup-id chromium
-bindsym $mod+c exec --no-startup-id ~/Script/chromiumproxy.sh
+bindsym $mod+c exec --no-startup-id /home/matteo/Script/chromiumproxy.sh
 bindsym $mod+m exec --no-startup-id electron-netease-cloud-music
 bindsym $mod+g exec --no-startup-id alacritty -e 'ranger'
 bindsym $mod+i exec --no-startup-id alacritty -e 'vim'
